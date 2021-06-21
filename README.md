@@ -13,7 +13,7 @@ Back end for an e-commerce site configured to allow users to use Sequelize to in
 
 ## Instructions
 
-Clone the repo and run ```npm i ``` in the terminal. 
+Clone the repo and run ```npm i``` in the terminal. 
 
 Create an '.env' file in the root folder and add the following: 
 ```
