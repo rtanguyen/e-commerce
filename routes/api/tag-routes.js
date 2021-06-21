@@ -10,16 +10,8 @@ router.get('/', (req, res) => {
         model: Product,
         attributes: ['id', 'product_name', 'price', 'stock', 'category_id'],
         through: ProductTag,
-        as: 'tags'
+        as: 'products'
       }
-      // {
-      //   include: {
-      //     model: Product,
-      //     attributes: ['id', 'product_id', 'tag_id'],
-      //     through: ProductTag,
-      //     as: 'products'
-      //   }
-      // }
     ]
   })
   .then(dbTagData => res.json(dbTagData))
@@ -29,6 +21,14 @@ router.get('/', (req, res) => {
     });
 });
 
+// router.get('/product_tag', (req, res) => {
+//   ProductTag.findAll({})
+//   .then(dbTagData => res.json(dbTagData))
+//   .catch(err => {
+//       console.log(err);
+//       res.status(500).json(err);
+//   });
+// });
 
 router.get('/:id', (req, res) => {
   // find a single tag by its `id`
@@ -42,16 +42,8 @@ router.get('/:id', (req, res) => {
         model: Product,
         attributes: ['id', 'product_name', 'price', 'stock', 'category_id'],
         through: ProductTag,
-        as: 'tags'
+        as: 'products'
       }
-      // {
-      //   include: {
-      //     model: Product,
-      //     attributes: ['id', 'product_id', 'tag_id'],
-      //     through: ProductTag,
-      //     as: 'products'
-      //   }
-      // }
     ]
   })
   .then(dbTagData => res.json(dbTagData))
