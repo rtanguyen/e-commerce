@@ -23,4 +23,5 @@ DB_PW=[YOUR MYSQL PASSWORD]
 ```
 
 ## Walkthrough Video
+https://drive.google.com/file/d/1eRLTudDpksgcoZUJmlpJY2Yu0FGpDcBY/view 
 
